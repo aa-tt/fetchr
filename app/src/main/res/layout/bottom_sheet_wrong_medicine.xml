@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:theme="@style/AppTheme"
+    android:background="@drawable/rounded_bg_error_scanned_bin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:weightSum="2"
+        android:paddingTop="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_20">
+
+
+        <TextView
+            android:id="@+id/select_issue_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_30"
+            android:fontFamily="OpenSans-Semibold"
+            android:text="@string/select_issue_type"
+            android:textColor="#16325c"
+            android:textSize="@dimen/txt_16"
+            android:layout_weight="2"/>
+
+        <ImageButton
+            android:id="@+id/btnHideDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:background="@android:color/transparent"
+            android:paddingTop="@dimen/margin_8"
+            android:paddingBottom="@dimen/margin_8"
+            android:src="@drawable/ic_cancel_black_24dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_30"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/wrong_medicine_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_red_background"
+        android:text="@string/barcode_mrp_not_matched"
+        android:textColor="#c23934"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_20"
+        android:paddingEnd="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:layout_marginStart="@dimen/margin_20"
+        android:fontFamily="OpenSans-Semibold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/radio_wrong_medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_30"
+            android:background="@android:color/transparent"
+            android:paddingTop="@dimen/margin_8"
+            android:paddingBottom="@dimen/margin_8"
+            android:src="@drawable/bottomsheet_radio_checked"
+            android:layout_marginEnd="@dimen/margin_15"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="OpenSans-Semibold"
+            android:text="@string/wrong_medicine"
+            android:textColor="#16325c"
+            android:textSize="@dimen/txt_16"
+            android:layout_weight="2"/>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/button_layout" />
+
+</LinearLayout>

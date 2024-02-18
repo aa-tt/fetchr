@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/margin_8"
+    android:layout_marginEnd="@dimen/margin_8"
+    android:layout_marginTop="@dimen/margin_8"
+    >
+
+    <RadioButton
+        android:id="@+id/radio_issue"
+        android:layout_width="@dimen/margin_22"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:checked="false"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/issueTypeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:text="@string/missing_or_damaged_barcode_radio"/>
+
+</LinearLayout>

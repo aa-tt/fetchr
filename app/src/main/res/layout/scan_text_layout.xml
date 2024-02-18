@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f4"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <TextView
+        android:id="@+id/tv_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#54698d"
+        android:textSize="@dimen/txt_20"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/margin_80"
+        android:layout_marginEnd="@dimen/margin_80"
+        tools:text="Scan any one of the Medicine Barcodes" />
+
+
+    <TextView
+        android:id="@+id/tv_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#54698d"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:text="Tray_001" />
+
+</LinearLayout>

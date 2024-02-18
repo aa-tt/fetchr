@@ -1,0 +1,34 @@
+package com.pharmeasy.fetchr.constants
+
+val SCANNED_DELAY_TIME = 100.toLong()
+
+val GIT_SHA_KEY = "GIT_SHA"
+val BUILD_TIME_KEY = "BUILD_TIME"
+
+val PUT_AWAY_ITEM_START_RESULT_CODE = 0x122
+
+val PAGE_SIZE = 1000
+
+val PAGE_SIZE_COUNT = 100
+
+val REFRESH_DEBOUNCE = 1000.toLong()
+
+val PICKED_ITEM_DEBOUNCE = 600.toLong()
+
+val DELETE_BARCODE_DEBOUNCE = 500.toLong()
+
+val FILTER_DEBOUNCE=300.toLong()
+
+val ADD_ISSUE_TRAY_CODE = 100
+
+val SCAN_BIN_TRAY_CODE = 100
+
+val SCREENSHOT_TYPE = "image/jpg"
+
+val STATUS: String = "ASSIGNED,PICKED, PENDING_WITH_ISSUE"
+
+val ISSUE_STATUS: String = "INITIATED"
+
+val TRAYZONE: String = "trayZone"
+
+val SCREEN_TIMEOUT = 10

@@ -1,0 +1,281 @@
+<resources>
+    <string name="app_name">fetchr</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="nav_header_title">fetcher</string>
+
+    <string name="devices">SCANNERS</string>
+    <string name="select_scanner">SELECT A SCANNER</string>
+    <string name="take_break">TAKE BREAK</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="refresh">REFRESH</string>
+    <string name="trays">TRAYS</string>
+    <string name="filter">FILTER</string>
+    <string name="reset">CLEAR DATA</string>
+
+    <string name="disconnect">DISCONNECT</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="done">DONE</string>
+    <string name="save">SAVE</string>
+    <string name="complete">COMPLETE</string>
+    <string name="not_assigned">Not Assigned</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="google_sign_in">GOOGLE</string>
+    <string name="continue_with"> - continue with -</string>
+    <string name="continu">CONTINUE</string>
+    <string name="or">- or use username -</string>
+
+    <string name="pending_task">PENDING</string>
+    <string name="no_pending_task">Hurray ! No assigned tasks</string>
+    <string name="no_scanned_items">No scanned items found !</string>
+    <string name="no_scanners">No paired scanners found !</string>
+    <string name="default_error_message">Something is not right here</string>
+    <string name="processing">Processing</string>
+    <string name="wait">Please wait....</string>
+
+    <string name="new_task">NEW TASK</string>
+    <string name="task_no">TASK</string>
+    <string name="tray_no">TRAY</string>
+    <string name="start">START</string>
+    <string name="current_tray">CURRENT TRAY#</string>
+    <string name="tran_no">TRANSACTION#</string>
+    <string name="order_no">Order ID</string>
+    <string name="type">TYPE</string>
+    <string name="activate_break">ACTIVATE BREAK</string>
+    <string name="stop_break">COMPLETE BREAK</string>
+    <string name="break_message">You are in the break for</string>
+    <string name="ice_pack">ICE PACK</string>
+    <string name="leaflet">LEAFLET NEEDED</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <string name="scan_invoice">SCAN PUTAWAY BARCODE</string>
+    <string name="scan_medicine">SCAN MEDICINE BARCODE</string>
+    <string name="scan_tray">SCAN TRAY</string>
+    <string name="scan_tray_small">Scan Tray</string>
+    <string name="scan_tray_for_items">SCAN EMPTY TRAY</string>
+    <string name="scan_error">SCAN ERROR</string>
+    <string name="scan">SCAN</string>
+    <string name="add_new_tray">ADD NEW TRAY</string>
+    <string name="add_issue_tray">SCAN TRAY FOR ISSUE ITEMS</string>
+    <string name="scan_issue_tray">SCAN ISSUE TRAY</string>
+    <string name="verification_list">VERIFY MEDICINES</string>
+    <string name="filter_medicines">FILTER MEDICINES</string>
+    <string name="scan_medicines">VERIFY MEDICINES</string>
+    <string name="putaway_medicines">PUTAWAY MEDICINES</string>
+    <string name="pick_medicines">PICK MEDICINES</string>
+    <string name="scan_issue_medicines">SCAN ISSUE MEDICINES</string>
+    <string name="create_ticket">CREATE TICKET</string>
+
+    <string name="goto_biller">GO TO BILLER</string>
+
+    <string name="putaway_list">PUTAWAY LIST</string>
+    <string name="pick_list">PICK LIST</string>
+    <string name="audit_list">AUDITING LIST</string>
+
+    <string name="ucode">UCODE</string>
+    <string name="batch">Batch</string>
+    <string name="bin">BIN</string>
+    <string name="mrp">MRP</string>
+    <string name="expiry">EXPIRY</string>
+    <string name="status">STATUS</string>
+    <string name="count">COUNT</string>
+    <string name="issue_type">ISSUE TYPE</string>
+    <string name="raise_issue">RAISE ISSUE</string>
+    <string name="sidelined">SIDE LINE</string>
+    <string name="unscan">UNSCAN</string>
+    <string name="add_tray">+ADD TRAY</string>
+    <string name="complete_task">COMPLETE TASK</string>
+    <string name="complete_bin">COMPLETE BIN</string>
+    <string name="pending">PENDING</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="enable_scanner">ENABLE SCANNER</string>
+    <string name="disable_scanner">DISABLE SCANNER</string>
+    <string name="batch_no">Batch No.</string>
+
+    <string name="pack_qty">PACK QUANTITY</string>
+    <string name="ordered_qty">ORDERED QUANTITY</string>
+
+    <string name="items">ITEMS</string>
+    <string name="ucodes">UCODES</string>
+
+    <string name="sample_medicine">CROCIN ADVANCED 500 MG IN THE PACK FORM OF 15 STRIPS</string>
+
+    <string name="items_in_tray">ITEMS IN TRAY</string>
+    <string name="items_scanned">SCANNED ITEMS</string>
+    <string name="scanned_items">SCANNED</string>
+    <string name="issue_items">ISSUES</string>
+    <string name="delete_items">DELETE ITEMS</string>
+
+    <string name="damaged_barcode_quantity">QUANTITY FOR DAMAGED BARCODES</string>
+    <string name="missing_barcode_quantity">QUANTITY FOR MISSING BARCODES</string>
+    <string name="excess_barcode_quantity">QUANTITY FOR EXCESS BARCODES</string>
+
+    <string name="damaged_barcode">DAMAGED BARCODE</string>
+    <string name="missing_barcode">MISSING BARCODE</string>
+    <string name="short_quantity">SHORT QUANTITY</string>
+    <string name="excess_quantity">EXCESS QUANTITY</string>
+    <string name="by_counter">BY COUNT</string>
+    <string name="by_scan">BY SCAN</string>
+
+    <string-array name="verifier_issue_types">
+        <item>SHORT QUANTITY</item>
+        <item>MISSING BARCODE</item>
+        <item>DAMAGED BARCODE</item>
+        <item>INCORRECT BARCODE</item>
+        <item>WRONG MEDICINE</item>
+        <item>DAMAGED ITEM</item>
+        <item>NEAR EXPIRY</item>
+        <item>PACKAGING ISSUE</item>
+    </string-array>
+
+    <string-array name="racker_issue_types">
+        <item>SHORT QUANTITY</item>
+        <item>MISSING BARCODE</item>
+        <item>DAMAGED BARCODE</item>
+        <item>INCORRECT BARCODE</item>
+        <item>WRONG MEDICINE</item>
+        <item>DAMAGED ITEM</item>
+        <item>NEAR EXPIRY</item>
+        <item>PACKAGING ISSUE</item>
+    </string-array>
+
+    <string-array name="barcoder_issue_types">
+        <item>MISSING BARCODE</item>
+        <item>DAMAGED BARCODE</item>
+    </string-array>
+
+    <string-array name="picker_issue_types">
+        <item>BY COUNTER</item>
+        <item>BY SCAN</item>
+    </string-array>
+
+    <string-array name="auditor_issue_types">
+        <item>SHORT QUANTITY</item>
+        <item>MISSING BARCODE</item>
+        <item>DAMAGED BARCODE</item>
+        <item>EXCESS QUANTITY</item>
+        <item>INCORRECT BARCODE</item>
+        <item>WRONG MEDICINE</item>
+        <item>DAMAGED ITEM</item>
+        <item>NEAR EXPIRY</item>
+        <item>PACKAGING ISSUE</item>
+    </string-array>
+
+    <string name="already_processed">Selected item is already processed</string>
+    <string name="already_scanned">Selected item is already scanned</string>
+    <string name="marked_for_issue">This item is marked for issue</string>
+    <string name="wrong_item_scanned">Wrong item scanned</string>
+    <string name="save_completed">Saved successfully !</string>
+    <string name="task_completed">Task completed successfully !</string>
+    <string name="item_completed">Item completed successfully !</string>
+    <string name="unsaved_changes">You have unsaved changes. Cannot go back</string>
+    <string name="invalid_barcode">Invalid Barcode</string>
+    <string name="no_items_left">No items available</string>
+    <string name="zero_not_allowed">Quantity should not be zero</string>
+    <string name="unable_to_process">Unable to process. Try again</string>
+    <string name="request_timeout">Request timeout. Try again</string>
+    <string name="network_error">No Internet Connection. Try again</string>
+    <string name="not_available">No more item to scan</string>
+    <string name="excess_qty">No more items available for this batch</string>
+
+    <string name="current_tray_empty">Current Tray is empty. Cannot add new tray</string>
+    <string name="cant_logout">Task in progress. Cannot sign out</string>
+    <string name="cant_break">Task in progress. Cannot take break</string>
+    <string name="break_scheduled">Break request has been recorded. You can take break after current task is completed !</string>
+    <string name="cant_start_task">Task is pending with admin. Please contact admin</string>
+    <string name="auditor_tray_handed">Task is completed. Please hand over tray to auditor admin.</string>
+    <string name="auditor_issue_handed">Task is pending with admin. Please hand over tray to auditor admin.</string>
+    <string name="order_cancelled">This task cannot be completed. Handover the tray in racking zone.</string>
+    <string name="biller_barcode">The task is completed.Please Scan biller barcode.</string>
+    <string name="medi_barcode">The task is completed.Please Scan Medi Assist barcode.</string>
+    <string name="not_fullfilable">This order is not fulfillable. Do you want to continue?</string>
+    <string name="sideline_order">Do you want to sideline the order?</string>
+
+    <string name="bt_not_enabled">Bluetooth is not enabled. Cannot proceed</string>
+
+    <string name="invalid_tray">Invalid Tray#</string>
+    <string name="waiting">Please wait...</string>
+
+    <string name="title_ticket">Title</string>
+    <string name="description_ticket">Description</string>
+    <string name="priority_ticket">Priority</string>
+    <string name="cc_ticket">CC</string>
+    <string name="screenshot_ticket">Add Screenshot</string>
+    <string name="edit_description_ticket">Add Description</string>
+    <string name="spinner_priority_ticket">Select Severity of Issue</string>
+    <string name="edit_cc_ticket">Type Email and Press Enter</string>
+    <string name="save_ticket">SAVE ISSUE</string>
+    <string name="create_ticket_text">Create Ticket</string>
+
+    <string name="uploadImages">Set your image</string>
+    <string name="msg_loading">Loading...</string>
+    <string name="buffering_string">Buffering&#8230;</string>
+    <string name="toast_message">Playback completed.</string>
+    <string name="pick_file">Pick file</string>
+    <string name="upload_file">Upload file</string>
+    <string name="toast_pick_file_error">Unable to pick file. Check status of file manager.</string>
+    <string name="hello_user">Hello User,</string>
+    <string name="assigned_new_task">You have been assigned a New Task</string>
+    <string name="go_to_zone">Go to Procurement Zone</string>
+    <string name="start_self_assignment">START SELF ASSIGNMENT</string>
+    <string name="hello_name">Hello Deepen</string>
+    <string name="you_have_been_assigned_a_new_task">You have been assigned a New Task</string>
+    <string name="go_to_specific_zone">Go to Procurement Zone</string>
+    <string name="text_10">10</string>
+    <string name="tray">Tray:</string>
+    <string name="scan_empty_tray">Scan Empty Tray</string>
+    <string name="scan_bin">Scan Bin</string>
+    <string name="scan_next_tray">Scan Next Tray</string>
+    <string name="barcoder">Barcoder</string>
+    <string name="scan_any_medicine_barcode">Scan any one of the Medicine Barcodes</string>
+    <string name="enter_item_details">Enter Item Details</string>
+    <string name="enter_batch_no">Enter Batch No.</string>
+    <string name="enter_mrp">Enter MRP</string>
+    <string name="confirm_task_completion">Confirm Task Completion</string>
+    <string name="no_back_text">By clicking on confirm, you will not be able to raise issues again.</string>
+    <string name="scan_item_barcode">Scan Item Barcode</string>
+    <string name="review_medicine_details">Review Medicine Details</string>
+    <string name="paste_barcode">Paste Barcode</string>
+    <string name="proceed">Proceed</string>
+    <string name="paste_all_barcode_text">Paste All Barcodes on the Items</string>
+    <string name="packform">PACKFORM</string>
+    <string name="item_details">Item Details</string>
+    <string name="issue_qty">ISSUE QTY</string>
+    <string name="strip">STRIP</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="start_racking">Start Racking</string>
+    <string name="submit">submit</string>
+    <string name="select_issue_type">Select Issue Type</string>
+    <string name="missing_or_damaged_barcode_radio">Missing / Damaged Barcode</string>
+    <string name="incorrect_medicine_radio">Incorrect Medicine</string>
+    <string name="damaged_barcode_radio">Damaged Barcode</string>
+    <string name="extra_barcode_radio">Extra Barcode</string>
+    <string name="this_field_is_required">This Field is Required</string>
+    <string name="scan_all_items">Scan All Items</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="confirm">Confirm</string>
+    <string name="barcode_mrp_not_matched">Batch and MRP are not matching</string>
+    <string name="wrong_medicine">Wrong Medicine</string>
+    <string name="scan_barcode">SCAN BARCODE</string>
+    <string name="start_scanning">START SCANNING MEDICINES</string>
+    <string name="start_new_task">Start Task</string>
+    <string name="no_tray_assigned">No tray has been assigned</string>
+    <string name="sideline_zone">Go to Sideline Zone</string>
+    <string name="cancelled_zone">Go to Cancelled Zone</string>
+    <string name="jit_zone">Go to JIT Zone</string>
+    <string name="sale_return_zone">Go to Sales Return Zone</string>
+    <string name="auditor_zone">Go to Auditor Zone</string>
+    <string name="procurement_zone">Go to Procurement Zone</string>
+    <string name="rectification_zone">Go to Rectification Zone</string>
+    <string name="biller_zone">Go to Biller Zone</string>
+    <string name="jit_bin_zone">Go To JIT Bin Zone</string>
+    <string name="handover_issue_tray_to_admin">Handover Issue Tray to Admin</string>
+    <string name="batch_caps">BATCH: </string>
+
+
+</resources>

@@ -1,0 +1,146 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'io.fabric'
+
+apply plugin: 'org.greenrobot.greendao' // don't change the order
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'net.linguica.maven-settings'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    signingConfigs {
+        sign {
+            keyAlias 'fetchr'
+            keyPassword project["keypass"]
+            storeFile file(project["storeFilePath"])
+            storePassword project["storePass"]
+        }
+    }
+    compileSdkVersion 27
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.pharmeasy.fetchr"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode project.versionCode.toInteger()
+        versionName project.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_URL", project.prod_url
+            signingConfig signingConfigs.sign
+        }
+        debug {
+
+            buildConfigField "String", "API_URL", project.dev_url
+            debuggable true
+        }
+        dev {
+            buildConfigField "String", "API_URL", project.dev_url
+            signingConfig signingConfigs.sign
+            debuggable true
+            applicationIdSuffix "dev"
+        }
+        qa {
+            buildConfigField "String", "API_URL", project.qa_url
+            signingConfig signingConfigs.sign
+            debuggable true
+            applicationIdSuffix "qa"
+            ext.betaDistributionReleaseNotes = "Sample Release notes for the QA Build."
+            ext.betaDistributionEmails = "pharmeasyt@gmail.com"
+            ext.betaDistributionNotifications = true
+        }
+        playground {
+            buildConfigField "String", "API_URL", project.play_url
+            signingConfig signingConfigs.sign
+            debuggable true
+        }
+        staging {
+            buildConfigField "String", "API_URL", project.staging
+            signingConfig signingConfigs.sign
+            debuggable true
+        }
+        dev2 {
+            buildConfigField "String", "API_URL", project.dev2_url
+            signingConfig signingConfigs.sign
+            debuggable true
+            applicationIdSuffix "dev"
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildToolsVersion '27.0.3'
+}
+
+configurations {
+    all*.exclude group: 'com.android.support', module: 'support-v13'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.firebase:firebase-core:12.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.1'
+    implementation 'com.google.android.gms:play-services-auth:12.0.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.budiyev.android:code-scanner:1.8.4'
+    //implementation 'com.squareup.sqlbrite3:sqlbrite:3.2.0'
+    //implementation 'com.squareup.sqlbrite3:sqlbrite-kotlin:3.2.0'
+    implementation 'android.arch.persistence:db:1.0.0'
+    implementation 'android.arch.persistence:db-framework:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation 'org.greenrobot:greendao:3.2.2'
+    //implementation 'org.greenrobot:greendao-generator:3.2.2'
+
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.5'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.7'
+
+
+}
+
+greendao {
+    schemaVersion 24
+}
+kapt {
+    generateStubs = true
+}
+
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        outputFileName = "fetchr-${variant.name}-${variant.versionName}.${variant.versionCode}.apk"
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'

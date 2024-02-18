@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_batch_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/batch_no"
+        android:textColor="#54698d"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginStart="@dimen/margin_20"
+        android:textSize="@dimen/txt_13"
+        android:fontFamily="sans-serif"/>
+
+    <EditText
+        android:id="@+id/et_batch_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:background="@drawable/border_ticket"
+        android:fontFamily="sans-serif"
+        android:hint="@string/enter_batch_no"
+        android:paddingStart="@dimen/margin_12"
+        android:paddingEnd="@dimen/margin_12"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:textSize="@dimen/txt_13"
+        android:layout_below="@+id/tv_batch_no"/>
+
+    <TextView
+        android:id="@+id/tv_validation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_field_is_required"
+        android:textColor="#c23934"
+        android:layout_marginTop="@dimen/margin_6"
+        android:layout_marginStart="@dimen/margin_20"
+        android:textSize="@dimen/txt_12"
+        android:fontFamily="sans-serif"
+        android:visibility="gone"
+        android:layout_below="@+id/et_batch_no"/>
+
+    <TextView
+        android:id="@+id/tv_mrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mrp"
+        android:textColor="#54698d"
+        android:layout_marginBottom="@dimen/margin_6"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginStart="@dimen/margin_20"
+        android:textSize="@dimen/txt_13"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/tv_validation"/>
+
+
+    <EditText
+        android:id="@+id/et_mrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@drawable/border_ticket"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:layout_marginBottom="38dp"
+        android:paddingStart="@dimen/margin_12"
+        android:paddingEnd="@dimen/margin_12"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:hint="@string/enter_mrp"
+        android:textSize="@dimen/txt_13"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/tv_mrp"/>
+
+    <TextView
+        android:id="@+id/tv_validation_mrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_field_is_required"
+        android:textColor="#c23934"
+        android:layout_marginTop="@dimen/margin_6"
+        android:layout_marginStart="@dimen/margin_20"
+        android:textSize="@dimen/txt_12"
+        android:fontFamily="sans-serif"
+        android:visibility="gone"
+        android:layout_below="@+id/et_batch_no"/>
+
+</RelativeLayout>

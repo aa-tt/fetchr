@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg_error_scanned_bin"
+    android:backgroundTint="@color/bottom_sheet_bg"
+    android:theme="@style/AppTheme"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageButton
+                android:id="@+id/btnHideDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/margin_8"
+                android:paddingBottom="@dimen/margin_8"
+                android:src="@drawable/option_down_cta" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_16"
+                android:gravity="center_horizontal"
+                android:text="@string/select_issue_type"
+                android:textColor="#16325c"
+                android:textSize="@dimen/txt_16" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/issue_qty_list"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:listitem="@layout/issue_qty_item"></ListView>
+
+        <include
+            layout="@layout/button_layout"
+            android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg_error_scanned_bin"
+    android:backgroundTint="@color/white"
+    android:theme="@style/AppTheme"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/confirm_task_completion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/confirm_task_completion"
+            android:textColor="#16325c"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginStart="@dimen/margin_20"
+            android:fontFamily="OpenSans-Semibold"
+            android:textSize="@dimen/txt_16" />
+
+        <TextView
+            android:id="@+id/confirm_task_completion_text_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/no_back_text"
+            android:textColor="#16325c"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginStart="@dimen/margin_20"
+            android:textSize="@dimen/txt_14" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/btn_dismiss_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/dismiss"
+                android:fontFamily="OpenSans-Bold"
+                android:textColor="#01161d"
+                android:textSize="@dimen/txt_13"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/margin_50"/>
+
+            <Button
+                android:id="@+id/btn_confirm_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/confirm"
+                android:fontFamily="OpenSans-Bold"
+                android:textColor="#108e79"
+                android:textSize="@dimen/txt_13"/>
+
+        </LinearLayout>
+
+</LinearLayout>

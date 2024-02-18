@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "539390802196",
+    "firebase_url": "https://mercury-fetchr.firebaseio.com",
+    "project_id": "mercury-fetchr",
+    "storage_bucket": "mercury-fetchr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539390802196:android:f7ae223ac80b69d8",
+        "android_client_info": {
+          "package_name": "com.pharmeasy.fetchr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539390802196-ihupnb9fdrvu3qqaojgoqcae46uc7cg8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pharmeasy.fetchr",
+            "certificate_hash": "106cc99d86f7a7d8fffd649b22d594e9a75b71ec"
+          }
+        },
+        {
+          "client_id": "539390802196-r9lc931aavi5fc1plctpk5ktf7u4jadm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pharmeasy.fetchr",
+            "certificate_hash": "5f781f7863752321f3159d699343d50c17187d14"
+          }
+        },
+        {
+          "client_id": "539390802196-be0gtdg65i00an91acibutqs0dv0mu5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJM_pWSyh7yelawU7NLJDteMjXcQtV_1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539390802196-be0gtdg65i00an91acibutqs0dv0mu5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539390802196:android:978384c6dfca146c",
+        "android_client_info": {
+          "package_name": "com.pharmeasy.fetchr.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539390802196-be0gtdg65i00an91acibutqs0dv0mu5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJM_pWSyh7yelawU7NLJDteMjXcQtV_1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539390802196-be0gtdg65i00an91acibutqs0dv0mu5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539390802196:android:335d4c139e1aa4fd",
+        "android_client_info": {
+          "package_name": "com.pharmeasy.fetchr.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539390802196-be0gtdg65i00an91acibutqs0dv0mu5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJM_pWSyh7yelawU7NLJDteMjXcQtV_1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539390802196-be0gtdg65i00an91acibutqs0dv0mu5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
